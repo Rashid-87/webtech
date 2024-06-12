@@ -1,0 +1,152 @@
+ .newera {
+  background-image: url("./../../src/images/newera/newera.png");
+  background-color: var(--background-info);
+  background-position: calc(25%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__row {
+    padding: 145px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__rows {
+    width: 70%;
+  }
+  &__title {
+    color: var(--white);
+    font-size: 70px;
+    letter-spacing: 1px;
+  }
+  &__subtitle {
+    margin: 15px 0 25px 0;
+    color: var(--color-title);
+    font-size: 55px;
+    letter-spacing: 1px;
+  }
+  &__text {
+    font-size: 20px;
+    color: var(--white);
+    letter-spacing: 1px;
+  }
+  &__wrapper {
+    margin-top: 65px;
+    display: flex;
+    gap: 20px;
+  }
+  &__button {
+    display: inline-block;
+    border: none;
+    background: none;
+    padding: 15px 40px;
+    color: var(--white);
+    background: var(--color-title);
+    font-size: 16px;
+    border-radius: 5px;
+    outline: 2px solid var(--color-title);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  &__button:hover {
+    background: none;
+    transition: 0.3s;
+  }
+  &__button:active {
+    background: var(--color-title);
+    color: var(--black);
+  }
+  &__btn {
+    display: inline-block;
+    border: none;
+    background: none;
+    padding: 15px 40px;
+    color: var(--white);
+    font-size: 16px;
+    border-radius: 5px;
+    outline: 2px solid var(--color-title);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  &__btn:hover {
+    color: var(--black);
+    background: var(--color-title);
+    transition: 0.3s;
+  }
+  &__btn:active {
+    background: none;
+    color: var(--white);
+  }
+}
+@media (max-width: 900px) {
+  .newera {
+    &__row {
+      padding: 100px 0;
+    }
+    &__rows {
+      width: 50%;
+    }
+    &__title {
+      font-size: 60px;
+    }
+    &__subtitle {
+      margin: 15px 0 20px 0;
+      font-size: 45px;
+    }
+    &__text {
+      font-size: 18px;
+    }
+    &__wrapper {
+      margin-top: 45px;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .newera {
+    &__row {
+      padding: 120px 0 70 0;
+    }
+    &__rows {
+      width: 0%;
+    }
+    &__title {
+      font-size: 40px;
+    }
+    &__subtitle {
+      margin: 15px 0 20px 0;
+      font-size: 35px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+    &__wrapper {
+      margin-top: 35px;
+    }
+  }
+}
+@media (max-width: 520px) {
+  .newera {
+    &__row {
+      padding: 140px 0 55px 0;
+    }
+    &__title {
+      font-size: 35px;
+    }
+    &__subtitle {
+      margin: 10px 0 15px 0;
+      font-size: 30px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+    &__wrapper {
+      display: grid;
+    }
+    &__button {
+      padding: 14px 40px;
+      font-size: 14px;
+    }
+    &__btn {
+      padding: 14px 40px;
+      font-size: 14px;
+    }
+  }
+}

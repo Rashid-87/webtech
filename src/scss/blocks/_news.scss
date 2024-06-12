@@ -1,0 +1,139 @@
+.news {
+  padding-bottom: 145px;
+  background: var(--white);
+  &__row {
+    padding-top: 145px;
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+  }
+  &__linies {
+    height: 54px;
+    width: 3px;
+    background: var(--color-title);
+  }
+  &__title {
+    color: var(--color-working);
+    font-size: 40px;
+    letter-spacing: 1px;
+    span {
+      margin-right: 10px;
+      color: var(--color-title);
+      font-size: 40px;
+      letter-spacing: 1px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    column-gap: 30px;
+  }
+  &__wrapp {
+    max-width: 800px;
+    width: 100%;
+  }
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+  &__subtitle {
+    margin: 60px 0 30px 0;
+    color: var(--color-working);
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+  &__text {
+    color: var(--color-workers);
+    font-size: 16px;
+  }
+  &__desc {
+    margin-top: 60px;
+    color: var(--color-working);
+    font-size: 14px;
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &__top {
+    background: var(--color-working);
+  }
+  &__urers {
+    padding: 0 15px;
+    margin: 30px 0 10px 0;
+    font-size: 18px;
+    color: var(--white);
+    letter-spacing: 1px;
+  }
+  &__bottom {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__emmaj {
+    padding: 0 15px;
+    font-size: 15px;
+    color: var(--white);
+  }
+}
+@media (max-width: 900px) {
+  .news {
+    padding-bottom: 100px;
+    &__row {
+      padding-top: 100px;
+      margin-bottom: 50px;
+      gap: 25px;
+    }
+  }
+}
+@media (max-width: 750px) {
+  .news {
+    padding-bottom: 75px;
+    &__row {
+      padding-top: 75px;
+      margin-bottom: 30px;
+      gap: 25px;
+    }
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    &__subtitle {
+      margin: 30px 0 20px 0;
+    }
+    &__desc {
+      margin: 30px 0 20px 0;
+    }
+    &__right {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+  }
+}
+@media (max-width: 562px) {
+  .news {
+    padding-bottom: 55px;
+    &__row {
+      padding-top: 55px;
+      margin-bottom: 25px;
+      gap: 20px;
+    }
+    &__subtitle {
+      margin: 25px 0 20px 0;
+    }
+    &__text {
+      font-size: 14px;
+    }
+    &__desc {
+      margin: 20px 0 20px 0;
+    }
+    &__right {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+}

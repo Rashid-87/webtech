@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", "Montserrat", sans-serif;
+  background: var(--background-body);
+}
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+:root {
+  --white: #fff;
+  --black: #000;
+  --color-title: #377DFF;
+  --color-working: #141D28;
+  --color-workers: #5C6F87;
+  --color-testimonials: #4E5E72;
+  --background-body: rgb(229, 229, 229);
+  --background-header: #0C1117;
+  --background-info: #233142;
+  --background-choose: #F7F7F7;
+  --background-testimonials: #F8F8F9;
+}
